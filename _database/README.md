@@ -70,9 +70,6 @@ This SQL dump was generated using **phpMyAdmin (version 4.9.0.1)**, compatible w
 - Ensure that your MariaDB and PHP versions are compatible with the versions used during the dump.
 - Modify character sets or SQL modes if necessary to match your server configuration.
 
-## License
-This SQL dump is provided as-is. Ensure compliance with data privacy regulations if the data is real.
 
----
-*Generated on September 14, 2019, using phpMyAdmin 4.9.0.1*
+
 
