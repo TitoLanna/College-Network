@@ -79,3 +79,5 @@ The **Include Section** also provides functionality for managing data deletion w
 
 These deletion scripts ensure data integrity and user authentication while preventing unauthorized access or data manipulation within the CollNet platform.
 
+## Emoji Reaction Feature
+This[- **emoticons.php**, **emoticons_c_m.php**] PHP script dynamically generates a set of emoji reaction icons for comments. It retrieves the image path and the comment ID from the POST request and displays clickable emoji icons. When an emoji is clicked, it triggers the cEmoji() JavaScript function, passing the comment ID and the selected emoji.
