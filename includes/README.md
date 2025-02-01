@@ -81,3 +81,12 @@ These deletion scripts ensure data integrity and user authentication while preve
 
 ## Emoji Reaction Feature
 This[- **emoticons.php**, **emoticons_c_m.php**] PHP script dynamically generates a set of emoji reaction icons for comments. It retrieves the image path and the comment ID from the POST request and displays clickable emoji icons. When an emoji is clicked, it triggers the cEmoji() JavaScript function, passing the comment ID and the selected emoji.
+## Network Interactive Features
+The use of jQuery AJAX for asynchronous requests, enabling real-time updates and server communication without page reloads.The code uses PHP for server-side variables and paths, while JavaScript (with jQuery) handles the frontend interactions and dynamic content updates.
+- **Post Management**:Fetch, like/unlike, edit, save, delete, comment, share, and report posts.
+- **User Interactions**:Follow/unfollow users, upload/manage profile and cover photos, rate pages, and search for users.
+- **Messaging System**:Real-time messaging, typing indicators, message seen status, emoji support, contact list management, and message search.
+- **UI Features**:Image lightbox, loading indicators, error handling, emoji picker, and comment editing.
+Ajax Implementation:
+
+
