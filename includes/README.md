@@ -75,6 +75,7 @@ The **Include Section** also provides functionality for managing data deletion w
 - **delete_saved.php**: This script deletes a saved item based on its ID. It sanitizes the input using `FILTER_SANITIZE_NUMBER_INT` to prevent injection attacks, prepares the SQL delete statement with placeholders to ensure security, and executes the deletion using prepared statements.
 
 - **delete_comment.php**: This script handles the deletion of comments. It verifies that the user requesting deletion is the original author of the comment by checking session data and matching it with the comment's author ID in the database. If the verification is successful, the comment is securely deleted using a prepared SQL statement; otherwise, the deletion request is denied.
+- **deletepost.php**: Handles the deletion of posts from the database. It verifies if the current user (session ID) is the author of the post before allowing deletion. Additionally, it removes associated 'like' and 'comment' notifications related to the post.
 
 These deletion scripts ensure data integrity and user authentication while preventing unauthorized access or data manipulation within the CollNet platform.
 
