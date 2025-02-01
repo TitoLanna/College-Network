@@ -17,7 +17,7 @@ CollNet is a social networking platform designed to help users meet new friends 
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-repo/collnet.git
+   git clone (https://github.com/TitoLanna/College-Network/tree/main)
    ```
 2. Navigate to the project directory:
    ```bash
