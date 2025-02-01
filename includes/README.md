@@ -99,11 +99,21 @@ This PHP script implements a **Follow/Unfollow** feature, allowing users to foll
 The script enables dynamic following, unfollowing, updating of follower counts, and managing notifications without page reloads.
 
 ## Fetch Section
-- **fetchTrending.php**:
-- **fetch_comments.php**:
-- **fetch_notifybox.php**: 
-- **fetch_posts.php**:
-- **fetch_posts_home.php**:
-- **fetch_posts_saved.php**:
-- **fetch_posts_user.php**:
-- **fetch_user_info.php**:
+
+- **fetchTrending.php**: Displays the top 6 users by follower count, including profile images, full names, usernames, and a verification badge for verified users.
+
+- **fetch_comments.php**: Retrieves comments for a specific post based on the post ID. For each comment, it fetches the comment content, time, and author details (including profile picture, username, and verification status). The content is processed to replace emoticons and hashtags with appropriate links. Additionally, it checks if the comment was edited and displays the time of the last edit. Each comment includes options to edit or delete (if the comment author is the current user), and a report option if the comment author is someone else.
+
+- **fetch_notifybox.php**: Handles notifications for the logged-in user, fetching and displaying notifications based on their type (like, comment, share, star, follow). Notifications are marked as seen and displayed with user details, including profile image, post content, and time. The script checks for unseen notifications and returns the count of those notifications. It fetches relevant information for each notification type, such as post content for likes and shares, and user details for follows and stars.
+
+- **fetch_posts.php**: Fetches posts from the database, displaying user profile photo, username, timestamp, post content, and interaction counts (like, comment, share). The posts include privacy settings (public, followers, private) and support actions like like/unlike, comment system with emoji support, post sharing, and editing. The posts are formatted with text, hashtags, URLs, and embedded content (e.g., YouTube videos). The timestamp is converted to a "time ago" format, and privacy indicators (globe, lock icons) show post privacy. Special features like image lightbox functionality are also supported.
+
+- **fetch_posts_home.php**: Fetches posts for the home feed by retrieving posts made by users the logged-in user follows and their own posts. The posts are filtered based on privacy settings, with posts from followed users and the logged-in user displayed. It uses a limit to fetch posts and includes functionality to view them. If no posts are found, it returns "0".
+
+- **fetch_posts_saved.php**: Retrieves saved posts for the logged-in user. The posts are fetched in descending order of the saved time. It displays post content, user information, and allows the user to delete saved posts. Each saved post includes the author's name, username, a link to view the full post, and an option to remove the post from saved posts.
+
+- **fetch_posts_user.php**: Retrieves posts specific to a user, considering their follower status and privacy settings. It checks if the logged-in user follows the target user and adjusts the post visibility accordingly. The posts are fetched with privacy restrictions, displaying only public or followers' posts. If the user has no posts, it returns "0".
+
+- **fetch_user_info.php**: Fetches detailed user information, including the user's ID, full name, username, email, password, profile pictures (user photo and cover photo), work, school, country, birthday, verification status, website, biography, and language. It also includes admin status and online presence.
+
+
