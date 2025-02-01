@@ -88,5 +88,14 @@ The use of jQuery AJAX for asynchronous requests, enabling real-time updates and
 - **Messaging System**:Real-time messaging, typing indicators, message seen status, emoji support, contact list management, and message search.
 - **UI Features**:Image lightbox, loading indicators, error handling, emoji picker, and comment editing.
 Ajax Implementation:
+  ## Follow/Unfollow Functionality
+This PHP script implements a **Follow/Unfollow** feature, allowing users to follow or unfollow other users. It performs the following actions:
+- **Session Handling & Input Validation**: The user ID is fetched and sanitized from the POST request.  
+- **Follow/Unfollow Logic**:
+   - If the user is already following, it removes the follow record, updates the follower count, and deletes any follow-related notifications.
+   - If the user is not following, it adds the follow record, updates the follower count, and sends a notification to the target user.  
+- **Button Update**: After each action, the follow button is updated with either "Follow" or "Following".
+- **Notification**: A notification is sent to the target user when someone follows them.
+The script enables dynamic following, unfollowing, updating of follower counts, and managing notifications without page reloads.
 
 
