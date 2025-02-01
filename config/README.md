@@ -20,7 +20,7 @@ Ensure your MySQL server has a database named `CollNet`.
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone <(https://github.com/TitoLanna/College-Network/tree/main)>
+   git clone <[(https://github.com/TitoLanna/College-Network/tree/main)]>
    ```
 2. Navigate to the project directory.
 3. Place the project files in your web server’s root directory (e.g., `htdocs` for XAMPP).
