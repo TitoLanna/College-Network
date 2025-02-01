@@ -56,7 +56,7 @@ The system also includes logic to standardize gender representation and ensure s
 ## Country Data Management
 The **Include Section** also incorporates a predefined list of countries with their corresponding ISO country codes. This feature facilitates the standardization of country information in user profiles and supports functionalities that require geographical data.
 
-## Database and Table Management
+## Database and Table Management[**dbqueries.php**]
 The **Include Section** also includes scripts for database creation and table management within the CollNet project. These PHP functions handle the initialization of the database and the creation of essential tables:
 
 - **CreatecollegenetDB()**: Initializes the `collegenet` database.
@@ -98,4 +98,12 @@ This PHP script implements a **Follow/Unfollow** feature, allowing users to foll
 - **Notification**: A notification is sent to the target user when someone follows them.
 The script enables dynamic following, unfollowing, updating of follower counts, and managing notifications without page reloads.
 
-
+## Fetch Section
+- **fetchTrending.php**:
+- **fetch_comments.php**:
+- **fetch_notifybox.php**: 
+- **fetch_posts.php**:
+- **fetch_posts_home.php**:
+- **fetch_posts_saved.php**:
+- **fetch_posts_user.php**:
+- **fetch_user_info.php**:
